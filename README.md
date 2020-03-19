@@ -15,8 +15,8 @@ Module où l'on doit écrire dedans :
 
 Bibliothèques
 -------------
-- [Classic](https://github.com/rxi/classic) : Un petit module de classe pour Lua.
-- [Json](https://github.com/rxi/json.lua) : Un module permettant de faire le lien entre Lua et Json.
+- **[Classic](https://github.com/rxi/classic)** : Un petit module de classe pour Lua.
+- **[Json](https://github.com/rxi/json.lua)** : Un module permettant de faire le lien entre Lua et Json.
 
 Modules
 -------
