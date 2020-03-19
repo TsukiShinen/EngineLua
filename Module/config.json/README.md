@@ -1,4 +1,4 @@
-# Nom du module
+# config.json
 Contient la configuration qui seras lue par certain module
 
 # Contient
