@@ -1,10 +1,4 @@
-# Nom du module
-------
-[Description du module]
+# Screen
+Module gérant la taille et les valeur de la resolution de la fenetre (via config.json)
 
-# Fonctions
-------
-|Nom de la fonction | Description de la fonction 
-|-:|:-:
-|fonction 1| Description de la fonction 1
-|fonction 2| Description de la fonction 2
+Accessible partout dans le code via la variable Screen
