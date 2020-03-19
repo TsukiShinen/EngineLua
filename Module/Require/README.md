@@ -1,10 +1,4 @@
 # Nom du module
-------
-[Description du module]
+Importe toute les classes public et donc accessible partout dans le code
 
-# Fonctions
-------
-|Nom de la fonction | Description de la fonction 
-|-:|:-:
-|fonction 1| Description de la fonction 1
-|fonction 2| Description de la fonction 2
+Juste écrire require "classe" dans Require pour l'importer (classe est le chemin de la classe)
