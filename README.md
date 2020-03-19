@@ -21,7 +21,7 @@ Bibliothèques
 
 Modules
 -------
-- **config.json** : Contient la configuration qui seras lua par certain module
+- **config.json** : Contient la configuration qui seras lue par certain module
 
 Contient : 
 1. La Version du jeu
@@ -145,7 +145,7 @@ Camera:Move(dx, dy) -- Bouge la Camera
 Camera:Rotate(dr) -- Tourne la Camera
 ```
 ```lua
-Camera:Scale(sx, sy) -- Scale la Camera (Utiliser pour la Resolution)
+Camera:Scale(sx, sy) -- Zoom la Camera (Utiliser pour la Resolution)
 ```
 ```lua
 Camera:SetCenter(x, y) -- La camera centre l'objet x,y
@@ -185,9 +185,9 @@ if pScene == "Gameplay" then
 end
 ```
 
-Vous avez un exemple de scene dans Engin/Scene/SceneExample.lua (vous pouvez copier coller et remplacer avec le bon nom)
+Vous avez un exemple de scene dans Engine/Scene/SceneExample.lua (vous pouvez copier coller et remplacer avec le bon nom)
 
-- **MapManage** : Module gérant les map de Tiled
+- **MapManage** : Module gérant les maps de Tiled
 
 Accessible dans chaque Scene via _mapManager_
 
@@ -203,7 +203,7 @@ mapManager:DetectProperties(pProp, pX, pY) -- Return si la tile au coordonné do
 
 - **Sprite** : Module de sprite, avec animation et collision avec des tile ISSOLID
 
-La scene gere automatiquement les sprite en les ajoutant a leur liste (on peut y ajouter tout les membre qui hérite Sprite) : 
+La scène gere automatiquement les sprite en les ajoutant à leur liste (on peut y ajouter tous les membre qui héritent Sprite) : 
 
 ```lua
 table.insert(lstSprite, sprite)
@@ -213,7 +213,7 @@ Accessible :
 ```lua
 mySprite = Sprite(pTexture, pX, pY)
 ```
-ou en fesant heriter une autre classe de celle ci : 
+ou en faisant hériter une autre classe de celle ci : 
 ```lua
 Player = Sprite:extend()
 ```
@@ -222,7 +222,7 @@ Animation :
 Sprite:AddAnim(pAnimName, pTexture, pNbrFrame, pSizeX, pSizeY, pSpeed) -- Ajoute une anim a la liste
 ```
 ```lua
-Sprite:PlayAnim(pAnimName) -- Joue l'anim (pres enregistrer)
+Sprite:PlayAnim(pAnimName) -- Joue l'anim (pre-enregistrer)
 ```
 Collision : 
 ```lua
