@@ -1,4 +1,4 @@
-# Nom du module
+# GUI
 Module permettant la gestion d'une GUI
 
 Accessible partout dans le code via la variable GUI
