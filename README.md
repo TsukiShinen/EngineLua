@@ -12,6 +12,7 @@ Module où l'on doit écrire dedans :
 - config.json (La configuration a modifier comme vous le souhaiter)
 - Key (Ajout et modification des touche du clavier)
 - Require (Ajout des nouvelles classe public)
+- MapManager (Ajout de detection de proprieter)
 
 Bibliothèques
 -------------
@@ -182,4 +183,61 @@ if pScene == "Gameplay" then
   self.currentScene = SceneGameplay()
   find = true
 end
+```
+
+Vous avez un exemple de scene dans Engin/Scene/SceneExample.lua (vous pouvez copier coller et remplacer avec le bon nom)
+
+- **MapManage** : Module gérant les map de Tiled
+
+Accessible dans chaque Scene via _mapManager_
+
+```lua
+mapManager:AddMap(pMapName, pMap, pTexture) -- Ajoute une map a la liste
+```
+```lua
+mapManager:MapManager:LoadMap(pMapName) -- Charge une map de la liste
+```
+```lua
+mapManager:DetectProperties(pProp, pX, pY) -- Return si la tile au coordonné donner (pX, pY) a la proprieté (pProp) true
+```
+
+- **Sprite** : Module de sprite, avec animation et collision avec des tile ISSOLID
+
+La scene gere automatiquement les sprite en les ajoutant a leur liste (on peut y ajouter tout les membre qui hérite Sprite) : 
+
+```lua
+table.insert(lstSprite, sprite)
+```
+
+Accessible : 
+```lua
+mySprite = Sprite(pTexture, pX, pY)
+```
+ou en fesant heriter une autre classe de celle ci : 
+```lua
+Player = Sprite:extend()
+```
+Animation :
+```lua
+Sprite:AddAnim(pAnimName, pTexture, pNbrFrame, pSizeX, pSizeY, pSpeed) -- Ajoute une anim a la liste
+```
+```lua
+Sprite:PlayAnim(pAnimName) -- Joue l'anim (pres enregistrer)
+```
+Collision : 
+```lua
+Sprite.enableCollision = true -- par defaut = false, Permet d'activer la collision avec les tile ISSOLID
+```
+```lua
+Sprite:CollideUp(pProp) -- Aussi CollideDown, CollideRight, CollideLeft, Permet de detecter un tile avec une proprieté de chaque coté
+```
+Mouvement : 
+```lua
+Sprite.vx -- aussi vy Met un velociter au Sprite
+```
+```lua
+Sprite.frictionX -- aussi frictionY, Permet d'ajouter de la velociter au sprite (defaut : 99)
+```
+```lua
+Sprite:Move(pX, pY) -- Bouge le sprite de facon simple
 ```
