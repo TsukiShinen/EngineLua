@@ -1,12 +1,6 @@
 #EngineLua
 ==========
 
-## Sommaire
-- **[Presentation](#Presentation)**
-- **[Utile](#Util)**
-------------
-
-
 Presentation
 ------------
 EngineLua est un framework pour faire des jeux 2D en Lua. Il est gratuit et fonctionne sur Windows.
