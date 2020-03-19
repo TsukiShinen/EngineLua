@@ -66,26 +66,26 @@ Elements :
 group = GUI.newGroup()
 ```
 ```lua
-group:addElement(pElement) -- Add Element to the groupe
+group:addElement(pElement) -- Ajoute un Element dans le groupe
 ```
 ```lua
-group:setVisible(pVisible) -- Set Groupe visible or not
+group:setVisible(pVisible) -- Set Groupe visible ou pas
 ```
 ```lua
 group:myGroup:update() -- Update the Groupe
 ```
 ```lua
-group:myGroup:draw() -- Draw the Groupe
+group:myGroup:draw() -- Draw le Groupe
 ```
 2. Panel
 ```lua
 panel = GUI.newPanel(pX, pY, pW, pH, pColorOut)
 ```
 ```lua
-panel:setImage(pImage) -- Set Image of the panel
+panel:setImage(pImage) -- Set l'image du panel
 ```
 ```lua
-panel:setEvent(pEventType, pFunction) -- Add event to the panel, name it "hover" to set the event hover
+panel:setEvent(pEventType, pFunction) -- Ajout des event (type : "hover")
 ```
 ```lua
 panel:draw()
@@ -126,4 +126,31 @@ progressBar:setImages(pImageBack, pImageBar) -- Surcouche a Panel, permettant l'
 ```
 ```lua
 progressBar:setValue(pValue) -- set la valeur de la progressBar
+```
+
+- **Screen** : Module gérant la taille et les valeur de la resolution de la fenetre (via config.json)
+
+Accessible partout dans le code via la variable _Screen_
+
+- **Camera** : Module gérant la camera du jeu (et la resolution)
+
+Accessible partout dans le code via la variable _Camera_
+
+```lua
+Camera:Move(dx, dy) -- Bouge la Camera
+```
+```lua
+Camera:Rotate(dr) -- Tourne la Camera
+```
+```lua
+Camera:Scale(sx, sy) -- Scale la Camera (Utiliser pour la Resolution)
+```
+```lua
+Camera:SetCenter(x, y) -- La camera centre l'objet x,y
+```
+```lua
+Camera:SetPosition(x, y) -- La camera se place a x,y
+```
+```lua
+Camera:MousePosition() -- Recupere la position de la souris
 ```
