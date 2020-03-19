@@ -1,5 +1,7 @@
-# Nom du module
-[Description du module]
+# Util
+Module permettant d'appeler des fonction partout dans le code
+
+Accessible partout dans le code via la variable Util
 
 # Fonctions
 |Nom de la fonction | Description de la fonction
