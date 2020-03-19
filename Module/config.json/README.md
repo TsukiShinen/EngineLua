@@ -1,10 +1,9 @@
 # Nom du module
 ------
-[Description du module]
+Contient la configuration qui seras lue par certain module
 
-# Fonctions
+# Contient
 ------
-|Nom de la fonction | Description de la fonction 
-|-:|:-:
-|fonction 1| Description de la fonction 1
-|fonction 2| Description de la fonction 2
+* La Version du jeu
+* L'activation du mode de debugage
+* La resolution de l'écran
