@@ -154,3 +154,11 @@ Camera:SetPosition(x, y) -- La camera se place a x,y
 ```lua
 Camera:MousePosition() -- Recupere la position de la souris
 ```
+
+- **Key** : Repertorie les touche du jeu
+
+Accessible partout dans le code via la variable _Key_
+
+- **GameState** : Module gérant les scene du jeu (on peut y rajouter des variable global)
+
+Accessible partout dans le code via la variable _gameState_
