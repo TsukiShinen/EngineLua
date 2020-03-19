@@ -4,7 +4,7 @@ Module permettant la gestion d'une GUI
 Accessible partout dans le code via la variable GUI
 
 # Elements
-* Groupe
+* **Groupe**
 
 |Nom de la fonction | Description de la fonction 
 |:-:|:-:
@@ -14,7 +14,7 @@ Accessible partout dans le code via la variable GUI
 |group:myGroup:update()| Update le Groupe
 |group:myGroup:draw()| Draw le Groupe
 
-* Panel
+* **Panel**
 
 |Nom de la fonction | Description de la fonction 
 |:-:|:-:
@@ -24,20 +24,20 @@ Accessible partout dans le code via la variable GUI
 |panel:draw() | Draw l'élement
 |panel:update(dt) | Update l'élement
 
-* Text (hérite de Panel)
+* **Text** (hérite de Panel)
 
 |Nom de la fonction | Description de la fonction 
 |:-:|:-:
 |text = GUI.newText(pX, pY, pW, pH, pText, pFont, pHAlign, pVAlign, pColor) | Creer un élement text pour la GUI
 
-* Button (hérite de Panel)
+* **Button** (hérite de Panel)
 
 |Nom de la fonction | Description de la fonction 
 |:-:|:-:
 |button = GUI.newButton(pX, pY, pW, pH, pText, pFont, pColor) | Creer un button
 |button:setImages(pImageDefault, pImageHover, pImagePressed) | Donne les images d'affichage
 
-* CheckBox (hérite de Panel)
+* **CheckBox** (hérite de Panel)
 
 |Nom de la fonction | Description de la fonction 
 |:-:|:-:
@@ -45,7 +45,7 @@ Accessible partout dans le code via la variable GUI
 |checkBox:setImages(pImageDefault, pImagePressed) | Donne les images d'affichage
 |checkBox:setState(pbState) | Modifie l'état (boolean)
 
-* ProgressBar(hérite de Panel)
+* **ProgressBar**(hérite de Panel)
 
 |Nom de la fonction | Description de la fonction 
 |:-:|:-:
