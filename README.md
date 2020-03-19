@@ -93,13 +93,19 @@ panel:draw()
 ```lua
 panel:update(dt)
 ```
-3. Text
+3. Text (hérite de Panel)
 ```lua
-GUI.newText(pX, pY, pW, pH, pText, pFont, pHAlign, pVAlign, pColor)
+text = GUI.newText(pX, pY, pW, pH, pText, pFont, pHAlign, pVAlign, pColor)
 ```
-4. Button
 ```lua
-GUI.newButton(pX, pY, pW, pH, pText, pFont, pColor)
+text:draw(dt)
+```
+4. Button (hérite de Panel)
+```lua
+button = GUI.newButton(pX, pY, pW, pH, pText, pFont, pColor)
+```
+```lua
+button:setImages(pImageDefault, pImageHover, pImagePressed) -- Surcouche a Panel, permettant la gestion de plusieure images
 ```
 5. CheckBox
 ```lua
