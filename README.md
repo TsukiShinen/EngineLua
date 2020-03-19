@@ -1,8 +1,8 @@
-#EngineLua
-==========
+# EngineLua
 
-Presentation
-------------
+
+## Presentation
+
 EngineLua est un framework pour faire des jeux 2D en Lua. Il est gratuit et fonctionne sur Windows.
 
 Module où l'on doit écrire dedans :
@@ -13,13 +13,13 @@ Module où l'on doit écrire dedans :
 - Key (Ajout et modification des touche du clavier)
 - Require (Ajout des nouvelles classe public)
 
-Bibliothèques
--------------
+## Bibliothèques
+
 - **[Classic](https://github.com/rxi/classic)** : Un petit module de classe pour Lua.
 - **[Json](https://github.com/rxi/json.lua)** : Un module permettant de faire le lien entre Lua et Json.
 
-Modules
--------
+## Modules
+
 - **[config.json](https://github.com/TsukiShinen/EngineLua/tree/master/Module/config.json)**
 
 - **[Util](https://github.com/TsukiShinen/EngineLua/tree/master/Module/Util)**
