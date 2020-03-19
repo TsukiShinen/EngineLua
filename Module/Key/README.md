@@ -1,10 +1,5 @@
-# Nom du module
-------
-[Description du module]
+# Key
+Repertorie les touche du jeu
 
-# Fonctions
-------
-|Nom de la fonction | Description de la fonction 
-|-:|:-:
-|fonction 1| Description de la fonction 1
-|fonction 2| Description de la fonction 2
+Accessible partout dans le code via la variable _Key_
+
