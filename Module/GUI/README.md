@@ -1,7 +1,7 @@
 # GUI
 Module permettant la gestion d'une GUI
 
-Accessible partout dans le code via la variable GUI
+Accessible partout dans le code via la variable _GUI_
 
 # Elements
 * **Groupe**
