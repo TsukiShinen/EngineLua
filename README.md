@@ -107,11 +107,23 @@ button = GUI.newButton(pX, pY, pW, pH, pText, pFont, pColor)
 ```lua
 button:setImages(pImageDefault, pImageHover, pImagePressed) -- Surcouche a Panel, permettant la gestion de plusieure images
 ```
-5. CheckBox
+5. CheckBox (hérite de Panel)
 ```lua
-GUI.newCheckbox(pX, pY, pW, pH)
+checkBox = GUI.newCheckbox(pX, pY, pW, pH)
 ```
-6. ProgressBar
 ```lua
-GUI.newProgressBar(pX, pY, pW, pH, pMax, pColorOut, pColorIn)
+checkBox:setImages(pImageDefault, pImagePressed) -- Surcouche a Panel, permettant d'afficher l'image correspondant a l'état
+```
+```lua
+checkBox:setState(pbState) -- Modifie l'etat (boolean)
+```
+6. ProgressBar(hérite de Panel)
+```lua
+progressBar = GUI.newProgressBar(pX, pY, pW, pH, pMax, pColorOut, pColorIn)
+```
+```lua
+progressBar:setImages(pImageBack, pImageBar) -- Surcouche a Panel, permettant l'affichage de la bar vide et x remplie
+```
+```lua
+progressBar:setValue(pValue) -- set la valeur de la progressBar
 ```
