@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  
+  "debug": true,
+  
+  "title": "Engine Lua",
+  
+  "resolution": {
+    "ScreenWidth": 800,
+    "ScreenHeight": 600,
+    "ScreenVirtualWidth": 400,
+    "ScreenVirtualHeight": 300
+  }
+}
