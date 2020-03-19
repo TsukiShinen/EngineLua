@@ -12,7 +12,6 @@ Module où l'on doit écrire dedans :
 - config.json (La configuration a modifier comme vous le souhaiter)
 - Key (Ajout et modification des touche du clavier)
 - Require (Ajout des nouvelles classe public)
-- MapManager (Ajout de detection de proprieter)
 
 Bibliothèques
 -------------
